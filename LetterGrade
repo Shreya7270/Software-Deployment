@@ -1,0 +1,42 @@
+//Team Name : Starwars
+//FGroup members : 1)Shreya Tangirala
+                  // 2)Akhila Gundekari 
+
+
+import java.util.Scanner;
+public class LetterGrade{
+    public static void main(String[] args){
+        char LetterGrade;
+
+        System.out.println("Please enter your grade : ");
+        Scanner scan = new Scanner(System.in);
+        int grade = scan.nextInt();
+
+        //if grade>=90, set the LetterGrade A
+
+        if(grade>=90){
+           LetterGrade = 'A';
+            }
+           
+        //if grade>=80, set the LetterGrade B 
+
+       else if(grade>=80){
+        LetterGrade = 'B';
+}
+        //if grade>=70, set the LetterGrade C
+
+       else if(grade>=70){
+        LetterGrade = 'C';
+}
+        //if grade>=60, set the LetterGrade D
+
+       else if(grade>=60){
+        LetterGrade = 'D';
+}
+        //else set the LetterGrade F
+        else{
+        LetterGrade = 'F';
+}
+       System.out.println("Your Grade is:" + LetterGrade);
+    }//main
+}//LetterMain
